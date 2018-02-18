@@ -5,7 +5,8 @@ const IndexPage = () => (
   <div>
     <h1>Hi all</h1>
     <p>Welcome to my blog.</p>
-    <p>That has absolutely nothing.... Except actual unit tests... Yet!</p>
+    <p>That has absolutely nothing.... Yet!</p>
+    <p>I'm honestly hoping it'll  deploy</p>
   </div>
 )
 
