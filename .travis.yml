@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "node"  
+before_deploy:
+  - yarn build  
+deploy:
+  - surge --project ./public --domain valeriavg.surge.sh
