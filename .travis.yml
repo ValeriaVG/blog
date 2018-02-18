@@ -7,8 +7,7 @@ cache:
 script:
   - npm run test:ci        
 before_deploy:
-  - mkdir public
-  - npm build  
+  - npm run build  
 deploy:
   provider: surge
   project: /public
