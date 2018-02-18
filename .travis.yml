@@ -7,9 +7,10 @@ cache:
 script:
   - npm run test:ci        
 before_deploy:
+  - mkdir public
   - npm build  
 deploy:
   provider: surge
-  project: ./public/
+  project: /public
   domain: valeriavg.surge.sh
   on: master  
