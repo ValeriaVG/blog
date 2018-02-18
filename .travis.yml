@@ -4,4 +4,7 @@ node_js:
 before_deploy:
   - yarn build  
 deploy:
-  - surge --project ./public --domain valeriavg.surge.sh
+  provider: surge
+  project: ./public/
+  domain: valeriavg.surge.sh
+  on: master  
