@@ -3627,6 +3627,12 @@ gatsby-plugin-resolve-src@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-resolve-src/-/gatsby-plugin-resolve-src-1.0.0.tgz#5606de11cb3e0983461e26ebdc3daba59e7099be"
 
+gatsby-plugin-styled-components@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-2.0.7.tgz#9bf9f20702f615ead4e4e5c614e3fb9c74dc0afe"
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-typography@^1.7.14:
   version "1.7.14"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-1.7.14.tgz#911baf7e5b5db1478f4aca7a50ad57622a32560a"
