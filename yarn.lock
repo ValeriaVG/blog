@@ -8,6 +8,12 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.40"
 
+"@babel/helper-annotate-as-pure@^7.0.0-beta.37":
+  version "7.0.0-beta.40"
+  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0-beta.40.tgz#095dd4c70b231eba17ebf61c3434e6f9d71bd574"
+  dependencies:
+    "@babel/types" "7.0.0-beta.40"
+
 "@babel/highlight@7.0.0-beta.40":
   version "7.0.0-beta.40"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.40.tgz#b43d67d76bf46e1d10d227f68cddcd263786b255"
@@ -15,6 +21,42 @@
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^3.0.0"
+
+"@babel/types@7.0.0-beta.40":
+  version "7.0.0-beta.40"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.40.tgz#25c3d7aae14126abe05fcb098c65a66b6d6b8c14"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.2.0"
+    to-fast-properties "^2.0.0"
+
+"@fortawesome/fontawesome-common-types@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.1.2.tgz#d6aa075058f0c984d6e2ebcbc0052c1f7f9bea72"
+
+"@fortawesome/fontawesome-free-brands@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free-brands/-/fontawesome-free-brands-5.0.6.tgz#fee054ce0c4d74019020f6353ca85cfb408de719"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.2"
+
+"@fortawesome/fontawesome-free-solid@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free-solid/-/fontawesome-free-solid-5.0.6.tgz#6bb5acdd081b03ab25b7684f7089b37ed3d20740"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.2"
+
+"@fortawesome/fontawesome@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome/-/fontawesome-1.1.3.tgz#7a4844345cbc7fb238f5f1788af73bd302ee9b80"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.2"
+
+"@fortawesome/react-fontawesome@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.0.17.tgz#69abd135523187044f533cadc5458f829d43961f"
+  dependencies:
+    humps "^2.0.1"
 
 "@types/history@*", "@types/history@^4.6.2":
   version "4.6.2"
@@ -626,6 +668,28 @@ babel-plugin-istanbul@^4.1.5:
 babel-plugin-jest-hoist@^22.2.0:
   version "22.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.2.0.tgz#bd34f39d652406669713b8c89e23ef25c890b993"
+
+babel-plugin-module-alias@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-module-alias/-/babel-plugin-module-alias-1.6.0.tgz#df7e3aaba3544f4c06a9d3314a26bbbff6d87b61"
+
+babel-plugin-module-resolver@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-3.1.0.tgz#cf7868bd2c1818f855aede16141009b87dd1f95b"
+  dependencies:
+    find-babel-config "^1.1.0"
+    glob "^7.1.2"
+    pkg-up "^2.0.0"
+    reselect "^3.0.1"
+    resolve "^1.4.0"
+
+babel-plugin-styled-components@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.5.0.tgz#4549f28a19fb05170aa9ee429b4de0eac2d2401d"
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0-beta.37"
+    babel-types "^6.26.0"
+    stylis "^3.0.0"
 
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -1591,6 +1655,13 @@ buffer@^4.3.0, buffer@^4.9.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
+buffer@^5.0.3:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.1.0.tgz#c913e43678c7cb7c8bd16afbcddb6c5505e8f9fe"
+  dependencies:
+    base64-js "^1.0.2"
+    ieee754 "^1.1.4"
+
 builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -1812,6 +1883,14 @@ cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
 
+clipboard@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-1.7.1.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 clipboardy@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.2.2.tgz#2ce320b9ed9be1514f79878b53ff9765420903e2"
@@ -1939,6 +2018,12 @@ combined-stream@~0.0.4:
   dependencies:
     delayed-stream "0.0.5"
 
+comma-separated-tokens@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-1.0.4.tgz#72083e58d4a462f01866f6617f4d98a3cd3b8a46"
+  dependencies:
+    trim "0.0.1"
+
 commander@1.1.x:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-1.1.1.tgz#50d1651868ae60eccff0a2d9f34595376bc6b041"
@@ -1970,6 +2055,14 @@ common-tags@^1.4.0:
 commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
+
+compass-vertical-rhythm@^1.3.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.0.tgz#41cff92ef369d27e295d685f1ff420ff410e9883"
+  dependencies:
+    convert-css-length "^1.0.1"
+    object-assign "^4.1.0"
+    parse-unit "^1.0.1"
 
 component-bind@1.0.0:
   version "1.0.0"
@@ -2034,6 +2127,10 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
 
+console-polyfill@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/console-polyfill/-/console-polyfill-0.1.2.tgz#96cfed51caf78189f699572e6f18271dc37c0e30"
+
 constants-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
@@ -2049,6 +2146,13 @@ content-type-parser@^1.0.2:
 content-type@1.0.4, content-type@^1.0.2, content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
+
+convert-css-length@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/convert-css-length/-/convert-css-length-1.0.1.tgz#f3ecec664f2e873a0570e6afdd3e1ae4f92444b7"
+  dependencies:
+    console-polyfill "^0.1.2"
+    parse-unit "^1.0.1"
 
 convert-hrtime@^2.0.0:
   version "2.0.0"
@@ -2209,6 +2313,10 @@ css-color-function@^1.2.0:
     debug "^3.1.0"
     rgb "~0.1.0"
 
+css-color-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-color-keywords/-/css-color-keywords-1.0.0.tgz#fea2616dc676b2962686b3af8dbdbe180b244e05"
+
 css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
@@ -2246,6 +2354,14 @@ css-selector-tokenizer@^0.7.0:
     cssesc "^0.1.0"
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
+
+css-to-react-native@^2.0.3:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.1.2.tgz#c06d628467ef961c85ec358a90f3c87469fb0095"
+  dependencies:
+    css-color-keywords "^1.0.0"
+    fbjs "^0.8.5"
+    postcss-value-parser "^3.3.0"
 
 css-what@2.1:
   version "2.1.0"
@@ -2363,7 +2479,7 @@ debug@^3.1.0, debug@~3.1.0:
   dependencies:
     ms "2.0.0"
 
-decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
+decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
@@ -2437,6 +2553,10 @@ delayed-stream@0.0.5:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+
+delegate@^3.1.2:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -3148,7 +3268,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.5, fbjs@^0.8.9:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
@@ -3217,6 +3337,13 @@ finalhandler@1.1.0:
     parseurl "~1.3.2"
     statuses "~1.3.1"
     unpipe "~1.0.0"
+
+find-babel-config@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-babel-config/-/find-babel-config-1.1.0.tgz#acc01043a6749fec34429be6b64f542ebb5d6355"
+  dependencies:
+    json5 "^0.5.1"
+    path-exists "^3.0.0"
 
 find-cache-dir@^0.1.1:
   version "0.1.1"
@@ -3500,6 +3627,18 @@ gatsby-plugin-react-helmet@^2.0.5:
   dependencies:
     babel-runtime "^6.26.0"
 
+gatsby-plugin-resolve-src@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-resolve-src/-/gatsby-plugin-resolve-src-1.0.0.tgz#5606de11cb3e0983461e26ebdc3daba59e7099be"
+
+gatsby-plugin-typography@^1.7.14:
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-1.7.14.tgz#911baf7e5b5db1478f4aca7a50ad57622a32560a"
+  dependencies:
+    babel-runtime "^6.26.0"
+    react-typography "^0.16.1"
+    typography "^0.16.0"
+
 gatsby-react-router-scroll@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.11.tgz#1ad3bdfc7f0a897abf24e4d89111ee49de516691"
@@ -3782,6 +3921,12 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
+good-listener@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+  dependencies:
+    delegate "^3.1.2"
+
 got@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/got/-/got-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"
@@ -3828,6 +3973,10 @@ graphql@^0.11.3, graphql@^0.11.7:
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.7.tgz#e5abaa9cb7b7cccb84e9f0836bf4370d268750c6"
   dependencies:
     iterall "1.1.3"
+
+gray-percentage@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
 growly@^1.3.0:
   version "1.3.0"
@@ -3960,6 +4109,20 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.0"
 
+hast-util-parse-selector@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/hast-util-parse-selector/-/hast-util-parse-selector-2.1.0.tgz#b55c0f4bb7bb2040c889c325ef87ab29c38102b4"
+
+hastscript@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-3.1.0.tgz#66628ba6d7f1ad07d9277dd09028aba7f4934599"
+  dependencies:
+    camelcase "^3.0.0"
+    comma-separated-tokens "^1.0.0"
+    hast-util-parse-selector "^2.0.0"
+    property-information "^3.0.0"
+    space-separated-tokens "^1.0.0"
+
 hawk@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/hawk/-/hawk-1.1.1.tgz#87cd491f9b46e4e2aeaca335416766885d2d1ed9"
@@ -3986,6 +4149,10 @@ hawk@~6.0.2:
     cryptiles "3.x.x"
     hoek "4.x.x"
     sntp "2.x.x"
+
+highlight.js@~9.12.0:
+  version "9.12.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
 
 history@^4.6.2, history@^4.7.2:
   version "4.7.2"
@@ -4016,6 +4183,10 @@ hoek@2.x.x:
 hoek@4.x.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
+
+hoist-non-react-statics@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
 hoist-non-react-statics@^2.3.0:
   version "2.5.0"
@@ -4132,6 +4303,10 @@ https-browserify@0.0.1:
 https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
+
+humps@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/humps/-/humps-2.0.1.tgz#dd02ea6081bd0568dc5d073184463957ba9ef9aa"
 
 i@0.3.x:
   version "0.3.6"
@@ -5311,6 +5486,10 @@ lodash.foreach@^4.3.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
 
+lodash.isnumber@^3.0.0:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
+
 lodash.map@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
@@ -5423,6 +5602,12 @@ lowdb@^0.16.2:
 lowercase-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
+
+lowlight@~1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.9.1.tgz#ed7c3dffc36f8c1f263735c0fe0c907847c11250"
+  dependencies:
+    highlight.js "~9.12.0"
 
 lru-cache@^4.0.1:
   version "4.1.1"
@@ -5694,6 +5879,12 @@ mkdirp@0.5, mkdirp@0.x.x, "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+modularscale@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/modularscale/-/modularscale-1.0.2.tgz#4a8f13af32a5e5214fc6e2cfc529064abfd7d877"
+  dependencies:
+    lodash.isnumber "^3.0.0"
 
 moment@2.x.x, moment@^2.16.0:
   version "2.20.1"
@@ -6279,6 +6470,10 @@ parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
 
+parse-unit@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parse-unit/-/parse-unit-1.0.1.tgz#7e1bb6d5bef3874c28e392526a2541170291eecf"
+
 parse5@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
@@ -6458,6 +6653,12 @@ pkg-resolve@^0.1.7:
   dependencies:
     jspm "^0.17.0-beta.13"
     resolve "^1.1.7"
+
+pkg-up@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
+  dependencies:
+    find-up "^2.1.0"
 
 pkginfo@0.3.x:
   version "0.3.1"
@@ -7014,6 +7215,18 @@ pretty-format@^22.1.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
+prismjs@^1.8.4:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.11.0.tgz#297aef33eb79421bfdb19273a5092ca515970d29"
+  optionalDependencies:
+    clipboard "^1.7.1"
+
+prismjs@~1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.10.0.tgz#77e5187c2ae6b3253fcc313029cf25fe53778721"
+  optionalDependencies:
+    clipboard "^1.7.1"
+
 private@^0.1.6, private@^0.1.7:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -7072,6 +7285,10 @@ proper-lockfile@^1.1.2:
     extend "^3.0.0"
     graceful-fs "^4.1.2"
     retry "^0.10.0"
+
+property-information@^3.0.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/property-information/-/property-information-3.2.0.tgz#fd1483c8fbac61808f5fe359e7693a1f48a58331"
 
 proxy-addr@~2.0.2:
   version "2.0.2"
@@ -7332,6 +7549,16 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
+react-syntax-highlighter@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-7.0.0.tgz#a522ccf95f272178b8f25de2184383e9bf647155"
+  dependencies:
+    babel-runtime "^6.18.0"
+    highlight.js "~9.12.0"
+    lowlight "~1.9.1"
+    prismjs "^1.8.4"
+    refractor "^2.0.0"
+
 react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.2.0.tgz#bddf259a6b8fcd8555f012afc8eacc238872a211"
@@ -7339,6 +7566,10 @@ react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
     fbjs "^0.8.16"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
+
+react-typography@^0.16.1:
+  version "0.16.13"
+  resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.13.tgz#94bdd2a9448823bc74d8ebf7465d86c7dbe20dcf"
 
 react@^15.6.0:
   version "15.6.2"
@@ -7501,6 +7732,13 @@ redux@^3.6.0:
     lodash-es "^4.2.1"
     loose-envify "^1.1.0"
     symbol-observable "^1.0.3"
+
+refractor@^2.0.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/refractor/-/refractor-2.3.0.tgz#b8cade8f88020f8836ca3622c6ef87fd2444d76a"
+  dependencies:
+    hastscript "^3.1.0"
+    prismjs "~1.10.0"
 
 regenerate@^1.2.1:
   version "1.3.3"
@@ -7764,6 +8002,10 @@ requires-port@1.0.x, requires-port@1.x.x, requires-port@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
+reselect@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -7800,7 +8042,7 @@ resolve@1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
-resolve@^1.1.6, resolve@^1.1.7:
+resolve@^1.1.6, resolve@^1.1.7, resolve@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
   dependencies:
@@ -7961,6 +8203,10 @@ scroll-behavior@^0.9.9:
   dependencies:
     dom-helpers "^3.2.1"
     invariant "^2.2.2"
+
+select@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
 
 semver-diff@^2.0.0:
   version "2.1.0"
@@ -8360,6 +8606,12 @@ sourcemapped-stacktrace@^1.1.6:
   dependencies:
     source-map "0.5.6"
 
+space-separated-tokens@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/space-separated-tokens/-/space-separated-tokens-1.1.1.tgz#9695b9df9e65aec1811d4c3f9ce52520bc2f7e4d"
+  dependencies:
+    trim "0.0.1"
+
 spdx-correct@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-1.0.2.tgz#4b3073d933ff51f3912f03ac5519498a4150db40"
@@ -8563,6 +8815,28 @@ style-loader@^0.13.0:
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.13.2.tgz#74533384cf698c7104c7951150b49717adc2f3bb"
   dependencies:
     loader-utils "^1.0.2"
+
+styled-components@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.1.6.tgz#9c443146fa82c6659a9f64dd493bf2202480342e"
+  dependencies:
+    buffer "^5.0.3"
+    css-to-react-native "^2.0.3"
+    fbjs "^0.8.9"
+    hoist-non-react-statics "^1.2.0"
+    is-plain-object "^2.0.1"
+    prop-types "^15.5.4"
+    stylis "^3.4.0"
+    stylis-rule-sheet "^0.0.7"
+    supports-color "^3.2.3"
+
+stylis-rule-sheet@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.7.tgz#5c51dc879141a61821c2094ba91d2cbcf2469c6c"
+
+stylis@^3.0.0, stylis@^3.4.0:
+  version "3.4.10"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.10.tgz#a135cab4b9ff208e327fbb5a6fde3fa991c638ee"
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -8782,6 +9056,10 @@ timers-browserify@^2.0.2, timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tiny-emitter@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -8803,6 +9081,10 @@ to-arraybuffer@^1.0.0:
 to-fast-properties@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
+
+to-fast-properties@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
 to-object-path@^0.3.0:
   version "0.3.0"
@@ -8857,6 +9139,10 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
+trim@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/trim/-/trim-0.0.1.tgz#5858547f6b290757ee95cccc666fb50084c460dd"
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
@@ -8891,6 +9177,35 @@ type-is@~1.6.15:
 type-of@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/type-of/-/type-of-2.0.1.tgz#e72a1741896568e9f628378d816d6912f7f23972"
+
+typography-normalize@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.14.0.tgz#1d77c1fe2aaf4a51b3673c4c85c85a65a2d4b573"
+
+typography-plugin-code@^0.16.11:
+  version "0.16.11"
+  resolved "https://registry.yarnpkg.com/typography-plugin-code/-/typography-plugin-code-0.16.11.tgz#037c72803c2d76113220cf85d1a55d7cfc6a34de"
+  dependencies:
+    gray-percentage "^2.0.0"
+    lodash "^4.13.1"
+
+typography-theme-us-web-design-standards@^0.16.9:
+  version "0.16.9"
+  resolved "https://registry.yarnpkg.com/typography-theme-us-web-design-standards/-/typography-theme-us-web-design-standards-0.16.9.tgz#19e13fb0540010437889460a6148b2128f718fa0"
+  dependencies:
+    gray-percentage "^2.0.0"
+
+typography@^0.16.0, typography@^0.16.6:
+  version "0.16.6"
+  resolved "https://registry.yarnpkg.com/typography/-/typography-0.16.6.tgz#8eeb6a3f10a97fd08025132bb50272104ae72aa3"
+  dependencies:
+    compass-vertical-rhythm "^1.3.0"
+    decamelize "^1.2.0"
+    gray-percentage "^2.0.0"
+    lodash "^4.13.1"
+    modularscale "^1.0.2"
+    object-assign "^4.1.0"
+    typography-normalize "^0.14.0"
 
 ua-parser-js@^0.7.9:
   version "0.7.17"

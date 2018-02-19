@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "src": "./src"
+      }
+    }]
+  ],
+  "presets": [
+    "es2015", "react"
+  ]
+}

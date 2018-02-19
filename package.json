@@ -4,10 +4,22 @@
   "version": "1.0.0",
   "author": "Valeria Viana Gusmao <valeria.viana.gusmao@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.3",
+    "@fortawesome/fontawesome-free-brands": "^5.0.6",
+    "@fortawesome/fontawesome-free-solid": "^5.0.6",
+    "@fortawesome/react-fontawesome": "^0.0.17",
+    "babel-plugin-module-resolver": "^3.1.0",
+    "babel-plugin-styled-components": "^1.5.0",
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-react-helmet": "^2.0.5",
-    "surge": "^0.19.0"
+    "gatsby-plugin-resolve-src": "^1.0.0",
+    "react-syntax-highlighter": "^7.0.0",
+    "styled-components": "^3.1.6",
+    "surge": "^0.19.0",
+    "typography": "^0.16.6",
+    "typography-plugin-code": "^0.16.11",
+    "typography-theme-us-web-design-standards": "^0.16.9"
   },
   "keywords": [
     "valeriavg",
