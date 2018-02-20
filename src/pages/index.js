@@ -6,8 +6,6 @@ const IndexPage = ({ data }) => {
   const posts = data.allBlogPost.edges.map(r=>r.node)
   return (
     <div>
-      <h1>Hi all</h1>
-      <p>Welcome to my blog.</p>
       <PostList posts={posts} />
     </div>
   )
@@ -23,7 +21,7 @@ export const query = graphql`
           path,
           title,
           description,
-          category,
+          tags,
           published,
           image
         }
