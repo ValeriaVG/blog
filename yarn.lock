@@ -8,12 +8,6 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.40"
 
-"@babel/helper-annotate-as-pure@^7.0.0-beta.37":
-  version "7.0.0-beta.40"
-  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0-beta.40.tgz#095dd4c70b231eba17ebf61c3434e6f9d71bd574"
-  dependencies:
-    "@babel/types" "7.0.0-beta.40"
-
 "@babel/highlight@7.0.0-beta.40":
   version "7.0.0-beta.40"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.40.tgz#b43d67d76bf46e1d10d227f68cddcd263786b255"
@@ -21,14 +15,6 @@
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^3.0.0"
-
-"@babel/types@7.0.0-beta.40":
-  version "7.0.0-beta.40"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.40.tgz#25c3d7aae14126abe05fcb098c65a66b6d6b8c14"
-  dependencies:
-    esutils "^2.0.2"
-    lodash "^4.2.0"
-    to-fast-properties "^2.0.0"
 
 "@fortawesome/fontawesome-common-types@^0.1.2":
   version "0.1.2"
@@ -632,6 +618,13 @@ babel-jest@^22.2.2:
     babel-plugin-istanbul "^4.1.5"
     babel-preset-jest "^22.2.0"
 
+babel-jest@^22.4.0:
+  version "22.4.0"
+  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-22.4.0.tgz#79479739c87a39327383bb944a0a8a2deb5c9b4d"
+  dependencies:
+    babel-plugin-istanbul "^4.1.5"
+    babel-preset-jest "^22.2.0"
+
 babel-loader@^6.0.0:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.4.1.tgz#0b34112d5b0748a8dcdbf51acf6f9bd42d50b8ca"
@@ -679,14 +672,6 @@ babel-plugin-module-resolver@^3.1.0:
     reselect "^3.0.1"
     resolve "^1.4.0"
 
-babel-plugin-styled-components@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.5.0.tgz#4549f28a19fb05170aa9ee429b4de0eac2d2401d"
-  dependencies:
-    "@babel/helper-annotate-as-pure" "^7.0.0-beta.37"
-    babel-types "^6.26.0"
-    stylis "^3.0.0"
-
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -703,7 +688,7 @@ babel-plugin-syntax-class-properties@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-6.13.0.tgz#d7eb23b79a317f8543962c505b827c7d6cac27de"
 
-babel-plugin-syntax-decorators@^6.13.0:
+babel-plugin-syntax-decorators@^6.1.18, babel-plugin-syntax-decorators@^6.13.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-decorators/-/babel-plugin-syntax-decorators-6.13.0.tgz#312563b4dbde3cc806cee3e416cceeaddd11ac0b"
 
@@ -787,6 +772,14 @@ babel-plugin-transform-class-properties@^6.24.1, babel-plugin-transform-class-pr
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
+
+babel-plugin-transform-decorators-legacy@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-decorators-legacy/-/babel-plugin-transform-decorators-legacy-1.3.4.tgz#741b58f6c5bce9e6027e0882d9c994f04f366925"
+  dependencies:
+    babel-plugin-syntax-decorators "^6.1.18"
+    babel-runtime "^6.2.0"
+    babel-template "^6.3.0"
 
 babel-plugin-transform-decorators@^6.24.1:
   version "6.24.1"
@@ -1254,14 +1247,14 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
+babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
 
-babel-template@^6.16.0, babel-template@^6.24.1, babel-template@^6.26.0, babel-template@^6.9.0:
+babel-template@^6.16.0, babel-template@^6.24.1, babel-template@^6.26.0, babel-template@^6.3.0, babel-template@^6.9.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-template/-/babel-template-6.26.0.tgz#de03e2d16396b069f46dd9fff8521fb1a0e35e02"
   dependencies:
@@ -1720,6 +1713,10 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000809"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000809.tgz#b0b88434a598f40b546d46a4dbd839b0ff798f4d"
+
+caniuse-db@^1.0.30000810:
+  version "1.0.30000810"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000810.tgz#bd25830c41efab64339a2e381f49677343c84509"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000809"
@@ -3616,6 +3613,12 @@ gatsby-module-loader@^1.0.10:
   dependencies:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
+
+gatsby-plugin-google-analytics@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.19.tgz#e9112f01118e0a16eb61f1b39bb0757feba88f2b"
+  dependencies:
+    babel-runtime "^6.26.0"
 
 gatsby-plugin-react-helmet@^2.0.5:
   version "2.0.5"
@@ -8836,7 +8839,7 @@ stylis-rule-sheet@^0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.7.tgz#5c51dc879141a61821c2094ba91d2cbcf2469c6c"
 
-stylis@^3.0.0, stylis@^3.4.0:
+stylis@^3.4.0:
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.10.tgz#a135cab4b9ff208e327fbb5a6fde3fa991c638ee"
 
@@ -9083,10 +9086,6 @@ to-arraybuffer@^1.0.0:
 to-fast-properties@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
-
-to-fast-properties@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
 to-object-path@^0.3.0:
   version "0.3.0"

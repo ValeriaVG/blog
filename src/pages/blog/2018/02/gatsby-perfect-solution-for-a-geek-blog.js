@@ -1,20 +1,20 @@
-import React from "react";
-import Helmet from "react-helmet";
-import Code from "src/utils/code";
+import React from 'react'
+import Helmet from 'react-helmet'
+import Code from 'src/utils/code'
 
 export const settings = {
   title: `Gatsby: Perfect solution for a geek blog`,
-  tags: ["Static CMS", "Gatsby"],
+  tags: ['Static CMS', 'Gatsby'],
   description: `Describing a static blog creation from idea to deployment using Gatsby`,
   image: `https://pbs.twimg.com/profile_images/875556871427375106/Xuq8DypK.jpg`,
-  published: `2018-02-19`
-};
+  published: `2018-02-21`,
+}
 
 export default props => (
   <div>
     <Helmet
       title={settings.title}
-      meta={[{ name: "description", content: settings.description }]}
+      meta={[{ name: 'description', content: settings.description }]}
     />
 
     <h1>{settings.title}</h1>
@@ -42,22 +42,22 @@ export default props => (
     </p>
 
     <p>
-      Right after <code>yarn global add gastby</code> and{" "}
-      <code>gastby new blog {"&&"} cd blog</code>
+      Right after <code>yarn global add gastby</code> and{' '}
+      <code>gastby new blog {'&&'} cd blog</code>
       I started to look for the tests folder. You may think it's paranoid, but
       I'm a test-driven developer by design and I feel insecure without at least
-      <code>it('doesnt crash')</code> test.{" "}
+      <code>it('doesnt crash')</code> test.{' '}
     </p>
 
     <p>
-      Since we're having here a Facebook/React party let's{" "}
+      Since we're having here a Facebook/React party let's{' '}
       <code>yarn add jest --dev</code>
     </p>
 
     <p>
       Okay, looks like gastby is scanning folders in src, so it's wise to not
       place tests inside of it.
-      <code>mkdir __tests__ {"&&"} touch first.test.js</code>
+      <code>mkdir __tests__ {'&&'} touch first.test.js</code>
     </p>
     <p>
       We'll place there something like this: // Enzyme shallow test goes here
@@ -79,9 +79,9 @@ export default props => (
       So if you're a ninja programmer that writes perfect code in first try and
       never ever does refactoring you can skip the tests. Okay, now we can
       create an actual page. I want my posts to be categorised by year and
-      month. So let's mkdir pages/blog && mkdir pages/blog/2018 && mkdir
-      pages/blog/2018/02 && touch .... *make actual date* Here's what you can
-      paste in the file: *code* Let's see it in action! yarn develop and
+      month. So let's mkdir pages/blog {'&&'} mkdir pages/blog/2018 {'&&'} mkdir
+      pages/blog/2018/02 {'&&'} touch .... *make actual date* Here's what you
+      can paste in the file: *code* Let's see it in action! yarn develop and
       http://localhost:8000/blog/year/month/name Yahoo! Nice one, right! Was
       definitely worth it! Now we will conquer the world. If only we had a way
       to list those blog posts... Wait, we have! No markdown please! There's an
@@ -94,7 +94,7 @@ export default props => (
       you run builder or Dev server he brings the graphql server up and fills it
       with whatever needed. And he does it with JavaScript. And that means we
       can interfere and change the way he thinks of our content. But first,
-      let's see what he has.{" "}
+      let's see what he has.{' '}
     </p>
   </div>
-);
+)

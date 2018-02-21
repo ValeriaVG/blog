@@ -1,12 +1,16 @@
 {
+  "sourceMaps": true,
   "plugins": [
-    ["module-resolver", {
-      "alias": {
-        "src": "./src"
-      }
-    }]
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "src": "./src"
+        }
+      },
+      "transform-class-properties",
+      "transform-decorators-legacy"
+    ]
   ],
-  "presets": [
-    "es2015", "react"
-  ]
+  "presets": ["env", "es2015", "stage-0", "react", "jest"]
 }
