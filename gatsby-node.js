@@ -1,7 +1,7 @@
-require('babel-core/register')
-require('babel-polyfill')
-const crypto = require('crypto')
-const path = require('path')
+require("babel-core/register");
+require("babel-polyfill");
+const crypto = require("crypto");
+const path = require("path");
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -10,12 +10,12 @@ const path = require('path')
 
 // Implement the Gatsby API “onCreatePage”. This is called after every page is
 // created.
-exports.onCreatePage = async({page, boundActionCreators}) => {
-  const {createPage, createNode} = boundActionCreators
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage, createNode } = boundActionCreators;
   return new Promise((resolve, reject) => {
     if (page.path.match(/^\/blog\//)) {
       //page.layout = "blogEntry"
-      const {settings} = require(page.component)
+      const { settings } = require(page.component);
       if (settings) {
         // page.context=settings
         createNode({
@@ -34,10 +34,10 @@ exports.onCreatePage = async({page, boundActionCreators}) => {
             mediaType: `application/json`,
             content: JSON.stringify(settings)
           }
-        })
+        });
       }
       createPage(page);
     }
-    resolve()
-  })
-}
+    resolve();
+  });
+};
