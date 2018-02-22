@@ -6,3 +6,4 @@ usWebDesignStandardsTheme.plugins = [new CodePlugin()]
 
 const typography = new Typography(usWebDesignStandardsTheme)
 export default typography
+export const { rhythm, adjustFontSizeTo, scale } = typography

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import PostList from './components/PostList'
+import PostList from 'src/components/PostList'
 
 const IndexPage = ({ data }) => {
   const posts = data.allBlogPost.edges.map(r => r.node)
